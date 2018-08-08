@@ -1,0 +1,10 @@
+{
+  "short_name": "Fantasy Football Extention",
+  "name": "Fantasy Football Extension",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Fantasy Football Ext"
+  },
+  "version": "1.0"
+}
