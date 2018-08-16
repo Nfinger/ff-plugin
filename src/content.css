@@ -1,0 +1,62 @@
+.my-extension{
+    display: flex;
+    flex-direction: column;
+}
+
+.my-extension h1{
+    color: #000;
+}
+
+.tier-column {
+    flex: 1
+}
+
+.light-green {
+    background-color: rgba(0, 150, 20, 0.7);
+}
+
+.dark-green {
+    background-color: rgba(0, 150, 20, 0.2);
+}
+
+.picked {
+    background-color: rgba(0, 0, 0, 0.85);
+    text-decoration: line-through;
+}
+
+.position-header {
+    background-color: lightgray;
+}
+
+.flex-div {
+    display: flex;
+}
+
+.tab {
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    flex: 1;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}

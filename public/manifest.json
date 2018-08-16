@@ -1,10 +1,20 @@
 {
   "short_name": "Fantasy Football Extention",
   "name": "Fantasy Football Extension",
+  "version": "1.0",
   "manifest_version": 2,
-  "browser_action": {
-    "default_popup": "index.html",
-    "default_title": "Fantasy Football Ext"
+  "background": {
+    "scripts": ["app/background.js"]
   },
-  "version": "1.0"
+  "browser_action": {},
+  "content_scripts" : [
+    {
+      "matches": [ "https://sleeper.app/*" ],
+      "css": ["/static/css/app.css"],
+      "js": ["/static/js/content.js"]
+    }
+  ],
+  "web_accessible_resources":[
+    "/static/css/content.css"
+  ]
 }
